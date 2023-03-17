@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: unset;
+  font-family: 'sora', Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+.font-sora {
+  font-family: 'sora', arial;
+}
+
+@media only screen and (max-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.rs-btn-primary {
+  background-color: #3498ff;
+  background-color: var(--rs-btn-primary-bg);
+  border: none;
+  color: #fff;
+  color: var(--rs-btn-primary-text);
+}
+
+.rs-btn-ghost {
+  border-color: #ebeaef;
+  color: #777684;
+}
+
+.rs-picker-toggle {
+  border-radius: 9999px;
+}
+
+.rs-form-control-label {
+  font-weight: bold;
+}
+
+.rs-input {
+  font-size: unset;
+}
+
+.rs-btn {
+  font-size: unset;
+}
+
+.emoji-404 {
+  position: relative;
+  animation: mymove 2.5s infinite;
+}
+
+.rs-panel-header {
+  font-size: 0.8rem;
+}
+
+.rs-panel-body, .rs-panel-header {
+  padding-left: 0.25rem;
+  padding-right: 0;
+}
+
+.rs-panel-group>.rs-panel+.rs-panel:before {
+  left: 0px;
+  right: 0px;
+}
+
+.rs-panel-collapsible>.rs-panel-header>.rs-icon {
+  right: 0.25rem;
+}
+
+@keyframes mymove {
+  33%   {top: 0px;}
+  66%  {top: 20px;}
+  100%  {top: 0px}
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
